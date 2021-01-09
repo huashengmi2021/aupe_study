@@ -11,9 +11,9 @@ int main()
  
 	while((n = read(0, buf, BUFFSIZE)) >0 )
 	{
-           if(write(1,buf, n) != n){
+        if(write(1,buf, n) != n){
 	       err_sys("write  error");
-           }
+        }
 	}
 
 	if(n < 0){
